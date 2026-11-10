@@ -80,7 +80,7 @@ final class Settings: ObservableObject {
     internal var baseURL: URL {
         filemanager
             .homeDirectoryForCurrentUser
-            .appending(path: "Library/Application Support/CodeEdit", directoryHint: .isDirectory)
+            .appending(path: "Library/Application Support/iCode", directoryHint: .isDirectory)
     }
 
     /// The URL of the `settings.json` settings file.

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct OpenQuicklyPreviewView: View {
 
-    private let queue = DispatchQueue(label: "app.codeedit.CodeEdit.quickOpen.preview")
+    private let queue = DispatchQueue(label: "com.syrthax.iCode.quickOpen.preview")
     private let item: CEWorkspaceFile
 
     @StateObject var editorInstance: EditorInstance

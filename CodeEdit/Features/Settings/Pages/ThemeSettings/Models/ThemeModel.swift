@@ -26,7 +26,7 @@ final class ThemeModel: ObservableObject {
 
     /// The base folder url `~/Library/Application Support/CodeEdit/`
     private var baseURL: URL {
-        filemanager.homeDirectoryForCurrentUser.appending(path: "Library/Application Support/CodeEdit")
+        filemanager.homeDirectoryForCurrentUser.appending(path: "Library/Application Support/iCode")
     }
 
     var bundledThemesURL: URL? {

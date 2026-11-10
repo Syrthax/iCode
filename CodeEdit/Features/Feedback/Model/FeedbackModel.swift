@@ -143,8 +143,8 @@ public class FeedbackModel: ObservableObject {
 
         let config = GitHubTokenConfiguration(keychain.get(firstGitAccount!.name))
         GitHubAccount(config).postIssue(
-            owner: "CodeEditApp",
-            repository: "CodeEdit",
+            owner: "Syrthax",
+            repository: "iCode",
             title: "\(getFeedbackTypeTitle()) \(title)",
             body: createIssueBody(
                 description: description,
@@ -158,7 +158,7 @@ public class FeedbackModel: ObservableObject {
             switch response {
             case .success(let issue):
                 if Settings[\.sourceControl].general.openFeedbackInBrowser {
-                    self.openIssueURL(issue.htmlURL ?? URL(string: "https://github.com/CodeEditApp/CodeEdit/issues")!)
+                    self.openIssueURL(issue.htmlURL ?? URL(string: "https://github.com/Syrthax/iCode/issues")!)
                 }
                 self.isSubmitted.toggle()
                 print(issue)

@@ -116,7 +116,7 @@
 		6C67413D2C44A28C00AABDF5 /* ProjectNavigatorViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProjectNavigatorViewController+DataSource.swift"; sourceTree = "<group>"; };
 		6C67413F2C44A2A200AABDF5 /* ProjectNavigatorViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProjectNavigatorViewController+Delegate.swift"; sourceTree = "<group>"; };
 		6C9619262C3F285C009733CE /* CodeEditTestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CodeEditTestPlan.xctestplan; sourceTree = "<group>"; };
-		B658FB2C27DA9E0F00EA4DBD /* CodeEdit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeEdit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B658FB2C27DA9E0F00EA4DBD /* iCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B658FB3D27DA9E1000EA4DBD /* CodeEditTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeEditTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B658FB4727DA9E1000EA4DBD /* CodeEditUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeEditUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6FF04772B6C08AC002C2C78 /* DefaultThemes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DefaultThemes; sourceTree = "<group>"; };
@@ -260,7 +260,7 @@
 		B658FB2D27DA9E0F00EA4DBD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B658FB2C27DA9E0F00EA4DBD /* CodeEdit.app */,
+				B658FB2C27DA9E0F00EA4DBD /* iCode.app */,
 				B658FB3D27DA9E1000EA4DBD /* CodeEditTests.xctest */,
 				B658FB4727DA9E1000EA4DBD /* CodeEditUITests.xctest */,
 				2BE487EC28245162003F3F64 /* OpenWithCodeEdit.appex */,
@@ -339,7 +339,7 @@
 				6CCF73CF2E26DE3200B94F75 /* SwiftTerm */,
 			);
 			productName = CodeEdit;
-			productReference = B658FB2C27DA9E0F00EA4DBD /* CodeEdit.app */;
+			productReference = B658FB2C27DA9E0F00EA4DBD /* iCode.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B658FB3C27DA9E1000EA4DBD /* CodeEditTests */ = {
@@ -688,8 +688,9 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = "Change in Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = app.codeedit.CodeEdit;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.syrthax.iCode;
+				PRODUCT_MODULE_NAME = CodeEdit;
+				PRODUCT_NAME = iCode;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				REGISTER_APP_GROUPS = YES;
 				RUNTIME_EXCEPTION_ALLOW_JIT = YES;
@@ -721,11 +722,11 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.codeedit.CodeEditTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.syrthax.iCodeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodeEdit.app/Contents/MacOS/CodeEdit";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iCode.app/Contents/MacOS/iCode";
 			};
 			name = Alpha;
 		};
@@ -748,7 +749,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.codeedit.CodeEditUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.syrthax.iCodeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -773,7 +774,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = OpenWithCodeEdit/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = OpenWithCodeEdit;
+				INFOPLIST_KEY_CFBundleDisplayName = "Open With iCode";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -783,7 +784,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.codeedit.CodeEdit.OpenWithCodeEdit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.syrthax.iCode.OpenWithCodeEdit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SKIP_INSTALL = YES;
@@ -889,8 +890,9 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = "Change in Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = app.codeedit.CodeEdit;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.syrthax.iCode;
+				PRODUCT_MODULE_NAME = CodeEdit;
+				PRODUCT_NAME = iCode;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				REGISTER_APP_GROUPS = YES;
 				RUNTIME_EXCEPTION_ALLOW_JIT = YES;
@@ -922,11 +924,11 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.codeedit.CodeEditTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.syrthax.iCodeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodeEdit.app/Contents/MacOS/CodeEdit";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iCode.app/Contents/MacOS/iCode";
 			};
 			name = Beta;
 		};
@@ -949,7 +951,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.codeedit.CodeEditUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.syrthax.iCodeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -974,7 +976,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = OpenWithCodeEdit/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = OpenWithCodeEdit;
+				INFOPLIST_KEY_CFBundleDisplayName = "Open With iCode";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -984,7 +986,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.codeedit.CodeEdit.OpenWithCodeEdit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.syrthax.iCode.OpenWithCodeEdit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SKIP_INSTALL = YES;
@@ -1009,7 +1011,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = OpenWithCodeEdit/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = OpenWithCodeEdit;
+				INFOPLIST_KEY_CFBundleDisplayName = "Open With iCode";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1019,7 +1021,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.codeedit.CodeEdit.OpenWithCodeEdit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.syrthax.iCode.OpenWithCodeEdit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SKIP_INSTALL = YES;
@@ -1044,7 +1046,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = OpenWithCodeEdit/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = OpenWithCodeEdit;
+				INFOPLIST_KEY_CFBundleDisplayName = "Open With iCode";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1054,7 +1056,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.codeedit.CodeEdit.OpenWithCodeEdit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.syrthax.iCode.OpenWithCodeEdit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SKIP_INSTALL = YES;
@@ -1162,8 +1164,9 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = "Change in Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = app.codeedit.CodeEdit;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.syrthax.iCode;
+				PRODUCT_MODULE_NAME = CodeEdit;
+				PRODUCT_NAME = iCode;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				REGISTER_APP_GROUPS = YES;
 				RUNTIME_EXCEPTION_ALLOW_JIT = YES;
@@ -1195,11 +1198,11 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.codeedit.CodeEditTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.syrthax.iCodeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodeEdit.app/Contents/MacOS/CodeEdit";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iCode.app/Contents/MacOS/iCode";
 			};
 			name = Pre;
 		};
@@ -1222,7 +1225,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.codeedit.CodeEditUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.syrthax.iCodeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -1247,7 +1250,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = OpenWithCodeEdit/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = OpenWithCodeEdit;
+				INFOPLIST_KEY_CFBundleDisplayName = "Open With iCode";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1257,7 +1260,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.codeedit.CodeEdit.OpenWithCodeEdit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.syrthax.iCode.OpenWithCodeEdit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SKIP_INSTALL = YES;
@@ -1435,8 +1438,9 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = "Change in Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = app.codeedit.CodeEdit;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.syrthax.iCode;
+				PRODUCT_MODULE_NAME = CodeEdit;
+				PRODUCT_NAME = iCode;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				REGISTER_APP_GROUPS = YES;
 				RUNTIME_EXCEPTION_ALLOW_JIT = YES;
@@ -1479,8 +1483,9 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = "Change in Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = app.codeedit.CodeEdit;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.syrthax.iCode;
+				PRODUCT_MODULE_NAME = CodeEdit;
+				PRODUCT_NAME = iCode;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				REGISTER_APP_GROUPS = YES;
 				RUNTIME_EXCEPTION_ALLOW_JIT = YES;
@@ -1512,11 +1517,11 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.codeedit.CodeEditTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.syrthax.iCodeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodeEdit.app/Contents/MacOS/CodeEdit";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iCode.app/Contents/MacOS/iCode";
 			};
 			name = Debug;
 		};
@@ -1539,11 +1544,11 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.codeedit.CodeEditTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.syrthax.iCodeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodeEdit.app/Contents/MacOS/CodeEdit";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iCode.app/Contents/MacOS/iCode";
 			};
 			name = Release;
 		};
@@ -1566,7 +1571,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.codeedit.CodeEditUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.syrthax.iCodeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -1595,7 +1600,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.codeedit.CodeEditUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.syrthax.iCodeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;

@@ -1,0 +1,21 @@
+iCode
+Copyright 2026 Sarthak Ghosh
+
+This product is a fork of CodeEdit (https://github.com/CodeEditApp/CodeEdit),
+Copyright (c) 2022 CodeEdit, licensed under the MIT License.
+
+Licensing:
+  - Code from the CodeEdit project (all code up to and including upstream
+    commit fa2aebd8, and any later upstream changes merged in) remains under
+    the MIT License. The full MIT license text and copyright notice are
+    retained in LICENSE-CODEEDIT-MIT.md.
+  - Modifications and new contributions made in the iCode project are
+    licensed under the Apache License, Version 2.0 (see LICENSE).
+
+"CodeEdit" and the CodeEdit logo are names/marks of the CodeEdit project and
+are not used to brand this product. iCode is not affiliated with or endorsed
+by the CodeEdit project.
+
+Third-party Swift packages used by this project (e.g. CodeEditSourceEditor,
+CodeEditTextView, CodeEditKit, CodeEditLanguages, Sparkle and others) are
+distributed under their own licenses; see each package's LICENSE file.

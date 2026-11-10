@@ -12,8 +12,8 @@ extension SearchIndexer {
     class AsyncManager {
         /// An instance of the SearchIndexer
         let index: SearchIndexer
-        private let addQueue = DispatchQueue(label: "app.codeedit.CodeEdit.AddFilesToIndex", attributes: .concurrent)
-        private let searchQueue = DispatchQueue(label: "app.codeedit.CodeEdit.SearchIndex", attributes: .concurrent)
+        private let addQueue = DispatchQueue(label: "com.syrthax.iCode.AddFilesToIndex", attributes: .concurrent)
+        private let searchQueue = DispatchQueue(label: "com.syrthax.iCode.SearchIndex", attributes: .concurrent)
 
         init(index: SearchIndexer) {
             self.index = index

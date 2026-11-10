@@ -12,7 +12,7 @@ struct AboutFooterView: View {
     var body: some View {
         FooterView(
             primaryView: {
-                Link(destination: URL(string: "https://github.com/CodeEditApp/CodeEdit/blob/main/LICENSE.md")!) {
+                Link(destination: URL(string: "https://github.com/Syrthax/iCode/blob/main/LICENSE")!) {
                     Text("MIT License")
                         .underline()
                 }

@@ -105,7 +105,7 @@ extension WorkspaceDocument.SearchState {
 
         let asyncController = SearchIndexer.AsyncManager(index: indexer)
         let evaluateResultGroup = DispatchGroup()
-        let evaluateSearchQueue = DispatchQueue(label: "app.codeedit.CodeEdit.EvaluateSearch")
+        let evaluateSearchQueue = DispatchQueue(label: "com.syrthax.iCode.EvaluateSearch")
 
         let searchStream = await asyncController.search(query: searchQuery, 20)
         for try await result in searchStream {
