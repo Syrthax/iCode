@@ -1,3 +1,7 @@
+<p align="center">
+  <img src=".github/iCode-Icon-128@2x.png" height="128">
+</p>
+
 # iCode
 
 A native macOS code editor, built in Swift and SwiftUI.
